@@ -1,6 +1,6 @@
-A, B = map(int, input().split())
-
-if B % A == 0:
-    print(A + B)
-else:
-    print(B - A)
+A,B=map(int,input().split())
+for i in range(1,B+1):
+	if B%i==0 and i==A:
+		print(A+B)
+		exit()
+print(B-A)
